@@ -1,0 +1,13 @@
+let g:Tex_ViewRule_pdf = 'open'
+syntax enable
+set t_Co=256
+let g:solarized_termcolors=256
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+colorscheme solarized
+au FileType coq call coquille#FNMapping()
+
+

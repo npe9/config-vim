@@ -1,0 +1,1 @@
+/Users/npe/.haskell-vim-now/.vim

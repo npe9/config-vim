@@ -1,0 +1,13 @@
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'elzr/vim-json'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'Raimondi/delimitMate'
+Plugin 'gerw/vim-latex-suite'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'def-lkb/vimbufsync'
+Plugin 'the-lambda-church/coquille'
+
