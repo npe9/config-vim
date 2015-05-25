@@ -23,7 +23,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'godlygeek/tabular'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'christoomey/vim-tmux-navigator'
-
+Plugin 'honza/vim-snippets'
 " Haskell
 
 Plugin 'raichoo/haskell-vim'
@@ -177,4 +177,8 @@ set mat=2
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+if has("mac")
+  set macmeta
+endif
 
