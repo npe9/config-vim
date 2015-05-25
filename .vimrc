@@ -193,4 +193,10 @@ let g:CCTreeKeyCompressTree = 'zs'     " Compress call-tree
 let g:CCTreeKeyDepthPlus = '<Leader>ctdp'
 
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+:inoremap jk <esc>
+
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
 
