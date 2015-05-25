@@ -48,8 +48,10 @@ Plugin 'the-lambda-church/coquille'
 
 
 " Plugins 
-Plugin 'vim-scripts/cscope.vim'
+"Plugin 'vim-scripts/cscope.vim'
+Plugin 'vim-scripts/autoload_cscope.vim'
 "Plugin 'vim-scripts/cscope_macros.vim'
+Plugin 'steffanc/cscopemaps.vim'
 " auto completion
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
@@ -145,7 +147,7 @@ set number
 set list
 " But only interesting whitespace
 if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+	set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 endif
 
 
@@ -177,4 +179,14 @@ set mat=2
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+let g:CCTreeKeyTraceForwardTree = '<C-}>'
+let g:CCTreeKeyTraceReverseTree = '<C-{>'
+let g:CCTreeKeyHilightTree = '<C-l>'        " Static highlighting
+let g:CCTreeKeySaveWindow = '<Leader>cty'
+let g:CCTreeKeyToggleWindow = '<Leader>ctw'
+let g:CCTreeKeyCompressTree = 'zs'     " Compress call-tree
+let g:CCTreeKeyDepthPlus = '<Leader>ctdp'
+
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
